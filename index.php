@@ -120,7 +120,7 @@
                         <div class="p-3" style="max-width: 800px;">
                             <h4 class="text-primary text-uppercase font-weight-normal mb-md-3">Betakror ko'rinish</h4>
                             <h3 class="display-3 text-white mb-md-4">Hovli uy</h3>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
+                            <a href="./blog.php" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                         <div class="p-3" style="max-width: 800px;">
                             <h4 class="text-primary text-uppercase font-weight-normal mb-md-3">O'zgacha manzara</h4>
                             <h3 class="display-3 text-white mb-md-4">Ko'ngilochar uylar</h3>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
+                            <a href="./blog.php" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                         <div class="p-3" style="max-width: 800px;">
                             <h4 class="text-primary text-uppercase font-weight-normal mb-md-3">Ixcham va qulay uy</h4>
                             <h3 class="display-3 text-white mb-md-4">Katejlar</h3>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
+                            <a href="./blog.php" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                         <div class="p-3" style="max-width: 800px;">
                             <h4 class="text-primary text-uppercase font-weight-normal mb-md-3">Ko'p qavatli turarjoy kvartiralari</h4>
                             <h3 class="display-3 text-white mb-md-4">Kvartira turarjoyi</h3>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
+                            <a href="./blog.php" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Ko'proq</a>
                         </div>
                     </div>
                 </div>
@@ -213,83 +213,23 @@
     <!-- About End -->
 
 
-    <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6 pr-lg-5">
-                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Our Awesome Services</h6>
-                    <h1 class="mb-4 section-title">Awesome Interior Designing Services For Your Home</h1>
-                    <p>Invidunt lorem justo clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4">View More</a>
-                </div>
-                <div class="col-lg-6 p-0 pt-5 pt-lg-0">
-                    <div class="owl-carousel service-carousel position-relative">
-                        <div class="d-flex flex-column text-center bg-light mx-3 p-4">
-                            <h3 class="flaticon-bedroom display-3 font-weight-normal text-primary mb-3"></h3>
-                            <h5 class="mb-3">Bedroom Design</h5>
-                            <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos</p>
-                        </div>
-                        <div class="d-flex flex-column text-center bg-light mx-3 p-4">
-                            <h3 class="flaticon-kitchen display-3 font-weight-normal text-primary mb-3"></h3>
-                            <h5 class="mb-3">Kitchen Design</h5>
-                            <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos</p>
-                        </div>
-                        <div class="d-flex flex-column text-center bg-light mx-3 p-4">
-                            <h3 class="flaticon-bathroom display-3 font-weight-normal text-primary mb-3"></h3>
-                            <h5 class="mb-3">Bathroom Design</h5>
-                            <p class="m-0">Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet, diam sea est diam eos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-
-    <!-- Features Start -->
-    <div class="container-fluid bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 mt-5 py-5 pr-lg-5">
-                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Why Choose Us?</h6>
-                    <h1 class="mb-4 section-title">25+ Years Experience In The Interior Design Industry</h1>
-                    <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
-                    <ul class="list-inline">
-                        <li><h5><i class="far fa-check-square text-primary mr-3"></i>25+ Years Experience</h5></li>
-                        <li><h5><i class="far fa-check-square text-primary mr-3"></i>Best Interior Design</h5></li>
-                        <li><h5><i class="far fa-check-square text-primary mr-3"></i>Customer Satisfaction</h5></li>
-                    </ul>
-                    <a href="" class="btn btn-primary mt-3 py-2 px-4">View More</a>
-                </div>
-                <div class="col-lg-5">
-                    <div class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">
-                        <img class="h-100" src="img/feature.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
 
     <!-- Projects Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8 col text-center mb-4">
-                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Our Projects</h6>
-                    <h1 class="mb-4">Some Of Our Awesome Interior Designing Projects</h1>
+                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Loyihalarimiz</h6>
+                    <h1 class="mb-4">Tafsiyadagi qulay va hashamdor uylar</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-outline-primary m-1" data-filter=".first">Complete</li>
-                        <li class="btn btn-outline-primary m-1" data-filter=".second">Running</li>
-                        <li class="btn btn-outline-primary m-1" data-filter=".third">Upcoming</li>
+                        <li class="btn btn-outline-primary m-1 active"  data-filter="*">Barchasi</li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".first">Ko'ngilochar uylar</li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".second">Katejlar</li>
+                        <li class="btn btn-outline-primary m-1" data-filter=".third">Kvartira turarjoyi</li>
                     </ul>
                 </div>
             </div>
