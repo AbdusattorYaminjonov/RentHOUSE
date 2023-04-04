@@ -32,3 +32,23 @@ require_once 'database.php';
     ?>
     <input type="submit" value="O'chiriash" name="delet"><br>
 </form>
+<?php
+    if (isset($_POST['submit'])) {
+        $headline = $_POST['headline'];
+        $type = $_POST['turi'];
+        $rooms = $_POST['xonalar'];
+        $flor = $_POST['qavatlar_soni'];
+        $uy_holati =$_POST['uy_holati'];
+        $humans = $_POST['odam_soni'];
+        $price = $_POST['narxi'];
+        $fulladress = $_POST['fulladres'];
+        $link = mysqli_connect("localhost", "root", "")
+    or die("Serverga bog'lanmadi : " . mysqli_error($link));
+    mysqli_select_db($link, "renthouse") or die("Bazaga bog'lanmadi");
+    $query = "INSERT INTO uy(headline, turi,xonalar,qavatlar_soni,uy_holati,odamlar_soni,narxi,fulladress)
+    VALUES ('$headline',$type,$rooms,$flor,'$uy_holati',$humans,$price,'$fulladress')";
+    $result = mysqli_query($link, $query) or die("So'rov ishlamadi : " . mysqli_error($link));
+    mysqli_close($link);
+    }
+?>
+

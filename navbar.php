@@ -19,6 +19,7 @@
                                 <a href="blog.php" class="dropdown-item">Ko'pqavatli uy</a>
                                 <a href="blog.php" class="dropdown-item">Do'm/Kvartira</a>
                                 <a href="blog.php" class="dropdown-item">Katej uy</a>
+                                <a href="addHouse.php" class="dropdown-item">Add uy</a>
                             </div>
                         </div>
                         <a href="service.php" class="nav-item nav-link">Biz haqimizda</a>
