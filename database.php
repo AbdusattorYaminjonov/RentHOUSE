@@ -1,3 +1,3 @@
 <?php
 
-$mysqli = new mysqli('localhost', 'root', '', 'uy');
+$link = new mysqli('localhost', 'root', '', 'renthouse');
