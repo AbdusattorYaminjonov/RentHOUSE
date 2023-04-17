@@ -26,7 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="./css/mystyle.css">
 </head>
 
 <body>
