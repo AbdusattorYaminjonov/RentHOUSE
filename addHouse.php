@@ -14,7 +14,7 @@ require_once 'database.php';
 </head>
 <body>
     <?php if (empty($_POST)): ?>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <!--        <input type="text" name="son">
             <input type="submit" value="Uzatish">-->
     <?php
@@ -45,14 +45,7 @@ input type="submit" value="O'chiriash" name="delet"><br>
     */?>
 </form>
 <?php
-    $upload='/filess/';
-    $uploadfile=__DIR__.$upload .basename($_FILES['photo']['name']);
-    if(move_uploaded_file($_FILES['photo']['tmp_name'],$uploadfile)){
-        echo"File yuklandi.\n";
-    }else{
-        echo"File yuklanmadi!!!\n";
-    }
-    print_r($_FILES);
+
     endif;
 
     if (isset($_POST['submit'])) {
@@ -65,9 +58,17 @@ input type="submit" value="O'chiriash" name="delet"><br>
         $humans = $_POST['human'];
         $price = $_POST['price'];
         $fulladress = $_POST['fulladres'];
-
+        $upload='/filess/';
+        $uploadfile=__DIR__.$upload .basename($_FILES['photo']['name']);
+        $uploadfilebazaga=$upload .basename($_FILES['photo']['name']);
+        if(move_uploaded_file($_FILES['photo']['tmp_name'],$uploadfile)){
+            echo"File yuklandi.\n";
+        }else{
+            echo"File yuklanmadi!!!\n";
+        }
+        print_r($_FILES);
     $query = "INSERT INTO uy(photo,headline, type,rooms,floors,status,human,price,fulladress)
-        VALUES ('$photo','$headline',$type,$rooms,$floor,'$status',$humans,$price,'$fulladress')";
+        VALUES ('$uploadfilebazaga','$headline',$type,$rooms,$floor,'$status',$humans,$price,'$fulladress')";
 echo $query;
     
          $result = $link->query($query);
