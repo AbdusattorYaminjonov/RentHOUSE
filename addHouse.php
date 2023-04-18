@@ -9,29 +9,31 @@ require_once 'database.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="/css/mystyle.css">
+    
 </head>
 <body>
 <form method="post">
     <!--        <input type="text" name="son">
             <input type="submit" value="Uzatish">-->
     <?php
-        echo "
-          <div>
-            <label class='choosephoto' >
-                <input type='file' name='homImage' accept='image/*'>
-                choose photo
-            </label>
-          </div>  
-        "; 
-        echo "<input type='text' name='headline' placeholder='uynomi'>";
-        echo "<input type='text' name='turi' placeholder='turi'>";
-        echo "<input type='number' name='xonalar' placeholder='xona soni'>";
-        echo "<input type='number' name='qabvatlar_soni' placeholder='nechi etadj'>";
-        echo "<input type='text' name='uy_holati' placeholder='uy holati'>";
-        echo "<input type='number' name='odam_soni' placeholder='odamlar soni'>";
-        echo "<input type='number' name='narxi' placeholder='Narxi'>";
-        echo "<input type='text' name='fulladres' placeholder='toliq manzil'>";
+       echo "
+       <div >
+         <label class='choosephoto' >
+             <input type='file' name='homImage' accept='image/*'>
+             choose photo
+         </label>
+       </div><br>  
+     "; 
+        echo "<input type='text' name='headline' placeholder='uynomi'><br>";
+        echo "<input type='text' name='turi' placeholder='turi'><br>";
+        echo "<input type='number' name='xonalar' placeholder='xona soni'><br>";
+        echo "<input type='number' name='qabvatlar_soni' placeholder='nechi etadj'><br>";
+        echo "<input type='text' name='uy_holati' placeholder='uy holati'><br>";
+        echo "<input type='number' name='odam_soni' placeholder='odamlar soni'><br>";
+        echo "<input type='number' name='narxi' placeholder='Narxi'><br>";
+        echo "<input type='text' name='fulladres' placeholder='toliq manzil'><br>";
+        
     ?>
 
     <input type="hidden" name="soni" value="8">
