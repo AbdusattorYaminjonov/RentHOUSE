@@ -13,6 +13,7 @@ require_once 'database.php';
     
 </head>
 <body>
+    <?php if (empty($_POST)): ?>
 <form method="post">
     <!--        <input type="text" name="son">
             <input type="submit" value="Uzatish">-->
@@ -20,19 +21,19 @@ require_once 'database.php';
        echo "
        <div >
          <label class='choosephoto' >
-             <input type='file' name='homImage' accept='image/*'>
+             <input type='file' name='photo' accept='image/*'>
              choose photo
          </label>
        </div><br>  
      "; 
         echo "<input type='text' name='headline' placeholder='uynomi'><br>";
-        echo "<input type='text' name='turi' placeholder='turi'><br>";
-        echo "<input type='number' name='xonalar' placeholder='xona soni'><br>";
-        echo "<input type='number' name='qabvatlar_soni' placeholder='nechi etadj'><br>";
-        echo "<input type='text' name='uy_holati' placeholder='uy holati'><br>";
-        echo "<input type='number' name='odam_soni' placeholder='odamlar soni'><br>";
-        echo "<input type='number' name='narxi' placeholder='Narxi'><br>";
-        echo "<input type='text' name='fulladres' placeholder='toliq manzil'><br>";
+        echo "<input type='text' name='type' placeholder='turi'><br>";
+        echo "<input type='number' name='rooms' placeholder='xona soni'><br>";
+        echo "<input type='number' name='floors' placeholder='nechi etadj'><br>";
+        echo "<input type='text' name='status' placeholder='uy holati'><br>";
+        echo "<input type='number' name='human' placeholder='odamlar soni'><br>";
+        echo "<input type='number' name='price' placeholder='Narxi'><br>";
+        echo "<input type='text' name='fulladres' placeholder='toliq manzil'><br";
         
     ?>
 
@@ -40,27 +41,37 @@ require_once 'database.php';
     <input type="submit" value="Qo'shish" name="submit"><br><br>
     <?php
 /*        echo "<input type='number' name='id' placeholder='id'>";
-    */?><!--
-    input type="submit" value="O'chiriash" name="delet"><br>
-</form>*/
+input type="submit" value="O'chiriash" name="delet"><br>
+    */?>
+</form>
 <?php
-
+    $upload='/filess/';
+    $uploadfile=__DIR__.$upload .basename($_FILES['photo']['name']);
+    if(move_uploaded_file($_FILES['photo']['tmp_name'],$uploadfile)){
+        echo"File yuklandi.\n";
+    }else{
+        echo"File yuklanmadi!!!\n";
+    }
+    print_r($_FILES);
+    endif;
 
     if (isset($_POST['submit'])) {
+        $photo=$_POST['photo'];
         $headline = $_POST['headline'];
-        $type = $_POST['turi'];
-        $rooms = $_POST['xonalar'];
-        $flor = $_POST['qavatlar_soni'];
-        $uy_holati =$_POST['uy_holati'];
-        $humans = $_POST['odam_soni'];
-        $price = $_POST['narxi'];
+        $type = $_POST['type'];
+        $rooms = $_POST['rooms'];
+        $floor = $_POST['floors'];
+        $status =$_POST['status'];
+        $humans = $_POST['human'];
+        $price = $_POST['price'];
         $fulladress = $_POST['fulladres'];
 
-    $query = "INSERT INTO uy(headline, turi,xonalar,qavatlar_soni,uy_holati,odamlar_soni,narxi,fulladress)
-    VALUES ('$headline',$type,$rooms,$flor,'$uy_holati',$humans,$price,'$fulladress')";
-
-
-    $result = $link->query($query);
+    $query = "INSERT INTO uy(photo,headline, type,rooms,floors,status,human,price,fulladress)
+        VALUES ('$photo','$headline',$type,$rooms,$floor,'$status',$humans,$price,'$fulladress')";
+echo $query;
+    
+         $result = $link->query($query);
+         if ($result) echo "qo'shildi";
     }
 ?>
 
