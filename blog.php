@@ -142,10 +142,10 @@
                         <img class="card-img-top" src="img/blog-1.jpg" alt="">
                         <div class="card-body bg-white p-4">
                             <div class="d-flex align-items-center mb-3">
-                                <a class="btn btn-primary" href=""><i class="fa fa-link"></i></a>
-                                <h5 class="m-0 ml-3 text-truncate">Diam amet eos at no eos</h5>
+                                <h5 class="m-0 ml-3 text-truncate" name="sarlavha">3 honalik shinam uy</h5>
                             </div>
-                            <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p>
+                            <p name="uyholati">Uy holati yangi. Hozirgi zamon muhiti va yevropa usuldagi honalar. Eng muhimi hamma sharoyitlar bor.</p>
+                            <p name="odam"> </p>
                             <div class="d-flex">
                                 <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                 <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
