@@ -6,6 +6,9 @@
 .choosephoto input[type="file"]{
     display: none;
 }
+.choosephoto2 input[type="file"]{
+    display: none;
+}
 .choosephoto{
     color: black;
     height: 30px;
@@ -16,8 +19,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
     
 }
+.choosephoto:hover{
+    border-radius: 10px;
+}
+
+.choosephoto2{
+    color: black;
+    height: 30px;
+    width: 100px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+
 .choosephoto1{
     margin-left: 50px;
     width: 300px;

@@ -1,21 +1,5 @@
-<?php
-require_once 'database.php';
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/mystyle.css">
-
-</head>
-
-<body>
+<?php require_once 'database.php'?>
+<?php require_once './linkk/htmlcode.php';?>
     <div class="container-fluid bg-light">
         <div class="container">
             <div class="topphoto">
@@ -25,6 +9,7 @@ require_once 'database.php';
             <!-- dev code end -->
 
                 <?php if (empty($_POST)): ?>
+                <!--Qo'lda postga malumot yuklash-->
                     <form method="post" enctype="multipart/form-data">
                         <div class="sentr1">
                             <?php
@@ -32,9 +17,6 @@ require_once 'database.php';
                             echo "
                             <div >
                                 <label class='choosephoto' onclick='click' >
-                                    <div>
-                                        <img id='img-1' src='' height='500' alt=''>
-                                    </div>
                                     <input type='file' id='input-1' name='photo' accept='image/*'>
                                     choose photo
                                 </label>
@@ -52,6 +34,7 @@ require_once 'database.php';
                             ?>
 
                             <input type="hidden" name="soni" value="8">
+                            <a href="qidirish.php">Back</a>
                             <input class="btn inpt" type="submit" value="Qo'shish" name="submit"><br><br>
                         </div>
                     </form>
@@ -62,7 +45,7 @@ require_once 'database.php';
         <?php
 
                 endif;
-
+                // postga malumot kiritish
                 if (isset($_POST['submit'])) {
                     $headline = $_POST['headline'];
                     $type = $_POST['type'];
@@ -87,11 +70,8 @@ require_once 'database.php';
 
                     $result = $link->query($query);
                     if ($result)
-                        echo "qo'shildi";
+                        header("location: qidirish.php");
                 }
                 ?>
-    
 
-</body>
-
-</html>
+<?php require_once './linkk/footer.php'?>
